@@ -1,0 +1,41 @@
+#main-header {
+    text-align: center;
+    font-family: 'Ragyola', sans-serif;
+    font-size: 100px;
+    color: rgb(76, 132, 62);
+    border-right: 10000 cap;
+    border-width: 50px;   
+    border-style:ridge;  
+    border-color: rgb(106, 45, 126);
+  
+}
+
+.index-links { 
+    text-align: center;
+    font-size: 40px;
+
+}
+
+a {
+    color:rgb(76, 132, 62);
+    font-family: 'Ragyola', sans-serif;
+    text-decoration-line:none;
+}
+
+a:hover {
+    color: rgb(126, 190, 110)
+
+}
+
+
+
+body {    
+    background-color: bisque;
+}
+
+
+
+html {
+    cursor: url('assets/cursorWand1.png'), auto;
+}
+
