@@ -1,3 +1,16 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    cursor: url('assets/cursorWand1.png'), auto;
+}
+
+
+/*HEADER STYLING*/
+
 #main-header {
     text-align: center;
     font-family: 'Ragyola', sans-serif;
@@ -12,9 +25,12 @@
 
 }
 
+
+/*LINK STYLING*/
+
 .index-links { 
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
 
 }
 
@@ -29,42 +45,35 @@ a:hover {
 
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-
-
-body {    
-    background-color: bisque;
-}
-
-header {
-    margin-top: 0;
-    
-}
-
-html {
-    cursor: url('assets/cursorWand1.png'), auto;
-}
+/*LAYOUT STYLING*/
 
 .layout {
     display: flex;
     min-height: 100vh; 
 }
 
+
+body {    
+    background-color: bisque;
+}
+
+
 .side-bar{
-    width: 200px;
-    background-color: rgb(3, 53, 114);
+    width: 300px;
+    background-image: url(assets/purple-velvet.jpg);
+    background-size: cover;
 }
 
 .main-content {
     flex: 1;
-    padding: 0;
     display: flex;
     flex-direction: column;
 
+}
 
+nav{
+    display: flex;
+    flex-direction: column;
+    
+    
 }
