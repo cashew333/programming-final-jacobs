@@ -10,28 +10,48 @@ html {
 
 
 /*HEADER STYLING*/
-
-#main-header {
+header {
     text-align: center;
-    font-family: 'Ragyola', sans-serif;
-    font-size:700%;
-    color: rgb(76, 132, 62);
-    
-    border-width:70px ;   
-    border-style:ridge;  
-    border-color: rgb(106, 45, 126);
-
-    margin: 0;
+    padding-top: 15px;
+  
+    background-image: url(assets/sequins.jpg);
 
 }
+
+#main-header {
+  
+    background-color: rgb(0, 0, 0);
+
+    font-family: 'Ragyola', sans-serif;
+    font-size:750%;
+    color: rgb(202, 56, 56);
+    text-shadow: 3px 5px 8px rgb(255, 255, 255);
+    display:inline;
+    border-width:15px ;   
+    border-style:ridge;  
+    border-color: rgb(106, 45, 126);
+    border-radius: 10px;
+  
+    margin: 10px;  
+  
+   
+}
+
+
+
 
 
 /*LINK STYLING*/
 
-.index-links { 
+.index-links li{
+margin: 80px; ;
+
+}
+.index-links {
+    padding: 100px;;
+    list-style: none;
     text-align: center;
     font-size: 50px;
-
 }
 
 a {
@@ -42,7 +62,6 @@ a {
 
 a:hover {
     color: rgb(126, 190, 110)
-
 }
 
 /*LAYOUT STYLING*/
@@ -54,14 +73,15 @@ a:hover {
 
 
 body {    
-    background-color: bisque;
+    background-color: rgb(84, 47, 123);
 }
 
 
 .side-bar{
     width: 300px;
-    background-image: url(assets/purple-velvet.jpg);
-    background-size: cover;
+    background-image: url(assets/flower-swatch.jpg);
+    background-position: center;
+    background-size: 25%;
 }
 
 .main-content {
@@ -71,7 +91,7 @@ body {
 
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: column;
     
