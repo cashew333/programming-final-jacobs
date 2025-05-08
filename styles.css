@@ -23,7 +23,7 @@ header {
     background-color: rgb(0, 0, 0);
 
     font-family: 'Ragyola', sans-serif;
-    font-size:750%;
+    font-size: 500%;
     color: rgb(202, 56, 56);
     text-shadow: 3px 5px 8px rgb(255, 255, 255);
     display:inline;
@@ -79,7 +79,7 @@ body {
 
 
 .side-bar{
-    width: 300px;
+    width: 200px;
     background-image: url(assets/flower-swatch.jpg);
     background-position: center;
     background-size: 25%;
@@ -99,11 +99,49 @@ nav {
     
 }
 
+/*ABOUT LAYOUT*/
+.about-main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/blanket.jpg) ;
+    background-position: center;
 
-/*BANNER LAYOUT*/
+}
 
-#scroll-banner{
-    overflow: hidden;
+
+
+.about-text-box {
+    background-color: rgb(184, 102, 75);
+    border: burlywood;
+    border-style: groove;
+    border-width: 10px;
+    color: white;
+    padding: 40px;
+    margin: auto;
+    width: 600px;
+    border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about-image{ 
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+    height: 300px;
+    box-shadow: 0 0px 48px rgb(48, 207, 149);
+    border-radius: 200px;
+    
+
+}
+
+
+
+/*MUSIC PAGE BANNER LAYOUT*/
+
+#music-banner{
     background-color: rgb(69, 22, 22);
     padding: 15px;
   
@@ -112,39 +150,29 @@ nav {
     border-color: rgb(200, 190, 39);
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
-    position: relative;
+    text-align: center;
 
     
 }
 
 
+.banner-text{
 
-#scroll-container{
-    display: inline-flex;
-    animation-name: scrolling-text;
-    animation-duration: 40s;
+    animation: flash-colors 3s infinite;
     animation-timing-function: linear;
-    animation-iteration-count:infinite;
-}
-
-.scroll-text{
-    
-    color: rgb(255, 193, 107);
-
     padding-right: 50px;
 
 
 
 }
 
-@keyframes scrolling-text{
-    0% {transform: translateX(-50%);}
-    100% {transform: translateX(0%);}
-  
+@keyframes flash-colors{
+    0% {color: rgb(255, 238, 0); }
+    25% {color: rgb(228, 83, 4); }
+    50% {color: rgb(27, 222, 17); }
+    75% {color: rgb(33, 119, 218);}
+    100% {color: rgb(193, 17, 175);}
 }
 
+
 /* Mp3 Player*/
-audio {
-    background-color: blue;
-    color: aquamarine;
-}
