@@ -39,28 +39,26 @@ header {
 
 
 
-/*LINK STYLING*/
+/*INDEX LINK STYLING*/
 
 .index-links li{
 margin: 80px; ;
 
 }
 .index-links {
-    
-
-    padding: 100px;;
+    padding: 10px;;
     list-style: none;
     text-align: center;
     font-size: 50px;
 }
 
-a {
+.index-links a {
     color:rgb(76, 132, 62);
     font-family: 'Ragyola', sans-serif;
     text-decoration-line:none;
 }
 
-a:hover {
+.index-links a:hover {
     color: rgb(126, 190, 110)
 }
 
@@ -77,7 +75,20 @@ body {
 
 }
 
-
+.index-text-box {
+    background-color: rgb(84, 47, 123); 
+    border: burlywood;
+    border-style: groove;
+    border-width: 10px;
+    color: white;
+    padding: 2px;
+    margin: auto;
+    width: 600px;
+    border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+  
+}
 .side-bar{
     width: 200px;
     background-image: url(assets/flower-swatch.jpg);
@@ -85,10 +96,11 @@ body {
     background-size: 25%;
 }
 
-.main-content {
+.index-main-content {
     flex: 1;
     display: flex;
     flex-direction: column;
+    background-image: url(assets/diamonds.jpg);
 
 }
 
@@ -99,7 +111,7 @@ nav {
     
 }
 
-/*ABOUT LAYOUT*/
+/*ABOUT PAGE LAYOUT*/
 .about-main-content {
     flex: 1;
     display: flex;
@@ -136,6 +148,32 @@ nav {
     
 
 }
+/*MUSIC PAGE LAYOUT*/
+
+.music-main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/grass.jpg);
+    background-size: 10%;
+   
+}
+
+.tracks{
+
+text-align: center;
+font-family: 'Hello Bonia Serif', sans-serif;
+color: rgb(255, 255, 255);
+
+background-image:url(assets/dotted.jpg);
+border-width: 20px;
+border-style: ridge;
+border-radius: 30px;
+width: 80%;
+text-align: center;
+margin: auto;
+
+}
 
 
 
@@ -154,6 +192,7 @@ nav {
 
     
 }
+
 
 
 .banner-text{
@@ -175,4 +214,52 @@ nav {
 }
 
 
-/* Mp3 Player*/
+/*CONTACT PAGE LAYOUT*/
+
+.contact-main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/groovy-tile.jpg) ;
+    background-position: center;
+
+}
+
+
+.contact-text-box {
+    background-color: rgb(75, 144, 184);
+    border: burlywood;
+    border-style: groove;
+    border-width: 10px;
+    color: white;
+    padding: 40px;
+    margin: auto;
+    width: 600px;
+    border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+  
+}
+
+.contact-links li{
+margin: 80px; ;
+
+}
+.contact-links {
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.contact-links a {
+    color:rgb(217, 65, 27);
+    font-family: 'Ragyola', sans-serif;
+    text-decoration-line:none;
+}
+
+.contact-links a:hover {
+    color:rgb(228, 102, 70);
+}
+
