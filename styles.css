@@ -39,8 +39,6 @@ header {
 
 
 
-
-
 /*LINK STYLING*/
 
 .index-links li{
@@ -48,6 +46,8 @@ margin: 80px; ;
 
 }
 .index-links {
+    
+
     padding: 100px;;
     list-style: none;
     text-align: center;
@@ -73,7 +73,8 @@ a:hover {
 
 
 body {    
-    background-color: rgb(84, 47, 123);
+  background-color: rgb(84, 47, 123); 
+
 }
 
 
@@ -96,4 +97,54 @@ nav {
     flex-direction: column;
     
     
+}
+
+
+/*BANNER LAYOUT*/
+
+#scroll-banner{
+    overflow: hidden;
+    background-color: rgb(69, 22, 22);
+    padding: 15px;
+  
+    border-width: 10px;
+    border-style:inset;
+    border-color: rgb(200, 190, 39);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    position: relative;
+
+    
+}
+
+
+
+#scroll-container{
+    display: inline-flex;
+    animation-name: scrolling-text;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+}
+
+.scroll-text{
+    
+    color: rgb(255, 193, 107);
+
+    padding-right: 50px;
+
+
+
+}
+
+@keyframes scrolling-text{
+    0% {transform: translateX(-50%);}
+    100% {transform: translateX(0%);}
+  
+}
+
+/* Mp3 Player*/
+audio {
+    background-color: blue;
+    color: aquamarine;
 }
