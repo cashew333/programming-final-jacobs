@@ -1,38 +1,45 @@
+
+/* sets the size and spacing for the page */
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
+/* changes default cursor to one that i set throughout the website  */
 html {
     cursor: url('assets/cursorWand1.png'), auto;
 }
 
 
 /*HEADER STYLING*/
+
+/* sets title to center, adds spacing above and below, sets bg as image  */
 header {
     text-align: center;
-    padding-top: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   
     background-image: url(assets/sequins.jpg);
 
 }
 
+/* This is the logo. I set the font, font size to an rem (1 equal to 16px), set the color, display inlin means inline with text etc */
 #main-header {
   
     background-color: rgb(0, 0, 0);
 
     font-family: 'Ragyola', sans-serif;
-    font-size: 500%;
+    font-size: 5rem;
     color: rgb(202, 56, 56);
     text-shadow: 3px 5px 8px rgb(255, 255, 255);
     display:inline;
-    border-width:15px ;   
+    border-width:1rem ;   
     border-style:ridge;  
     border-color: rgb(106, 45, 126);
-    border-radius: 10px;
+    border-radius: .75rem;
   
-    margin: 10px;  
+    margin: .75rem;  
   
    
 }
@@ -40,16 +47,16 @@ header {
 
 
 /*INDEX LINK STYLING*/
-
+/* styled links on page, gave color, removed dec line, change color on hover  */
 .index-links li{
-margin: 80px; ;
+margin: 3rem; ;
 
 }
 .index-links {
-    padding: 10px;;
+    padding: 1rem;
     list-style: none;
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
 }
 
 .index-links a {
@@ -63,6 +70,8 @@ margin: 80px; ;
 }
 
 /*LAYOUT STYLING*/
+/* turns on flexbox and makes sets min height to full screen  */
+
 
 .layout {
     display: flex;
@@ -79,18 +88,18 @@ body {
     background-color: rgb(84, 47, 123); 
     border: burlywood;
     border-style: groove;
-    border-width: 10px;
+    border-width: 1rem;
     color: white;
-    padding: 2px;
     margin: auto;
-    width: 600px;
-    border-radius: 10px;
+    width: 60%;
+    border-radius: 1rem;
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
   
 }
+/* adds repeating pattern of image  */
 .side-bar{
-    width: 200px;
+    width: 12.5rem;
     background-image: url(assets/flower-swatch.jpg);
     background-position: center;
     background-size: 25%;
@@ -101,14 +110,13 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url(assets/diamonds.jpg);
+    background-position: center;
 
 }
 
 nav {
     display: flex;
     flex-direction: column;
-    
-    
 }
 
 /*ABOUT PAGE LAYOUT*/
@@ -127,24 +135,25 @@ nav {
     background-color: rgb(184, 102, 75);
     border: burlywood;
     border-style: groove;
-    border-width: 10px;
+    border-width: 1rem;
     color: white;
-    padding: 40px;
+    padding: 2.5rem;
     margin: auto;
-    width: 600px;
-    border-radius: 10px;
+    width: 60%;
+    border-radius: 1rem;
     font-family:Arial, Helvetica, sans-serif;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
+/* made image a circle and added a shadow  */
 .about-image{ 
-    width: 300px;
+    width: 18rem;
     margin: auto;
-    margin-top: 30px;
-    height: 300px;
-    box-shadow: 0 0px 48px rgb(48, 207, 149);
-    border-radius: 200px;
+    margin-top: 2rem;
+    height: 18rem;
+    box-shadow: 0 0px 3.5rem rgb(48, 207, 149);
+    border-radius: 12rem;
     
 
 }
@@ -156,6 +165,7 @@ nav {
     flex-direction: column;
     background-image: url(assets/grass.jpg);
     background-size: 10%;
+    background-position: center;
    
 }
 
@@ -166,9 +176,9 @@ font-family: 'Hello Bonia Serif', sans-serif;
 color: rgb(255, 255, 255);
 
 background-image:url(assets/dotted.jpg);
-border-width: 20px;
+border-width: 1rem;
 border-style: ridge;
-border-radius: 30px;
+border-radius: 2rem;
 width: 80%;
 text-align: center;
 margin: auto;
@@ -181,26 +191,24 @@ margin: auto;
 
 #music-banner{
     background-color: rgb(69, 22, 22);
-    padding: 15px;
+    padding: 1rem;
   
-    border-width: 10px;
+    border-width: .5rem;
     border-style:inset;
     border-color: rgb(200, 190, 39);
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 1.5rem;
     text-align: center;
 
     
 }
 
 
-
+/* animate colors of banner text  */
 .banner-text{
 
     animation: flash-colors 3s infinite;
     animation-timing-function: linear;
-    padding-right: 50px;
-
 
 
 }
@@ -230,26 +238,26 @@ margin: auto;
     background-color: rgb(75, 144, 184);
     border: burlywood;
     border-style: groove;
-    border-width: 10px;
+    border-width: 1rem;
     color: white;
-    padding: 40px;
     margin: auto;
-    width: 600px;
-    border-radius: 10px;
+    width: 60%;
+    border-radius: 1rem;
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
   
 }
 
 .contact-links li{
-margin: 80px; ;
+margin: 3rem; ;
 
 }
 .contact-links {
-    padding: 10px;
+    
+    padding: 1rem;
     list-style: none;
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
 }
 
 
@@ -263,3 +271,42 @@ margin: 80px; ;
     color:rgb(228, 102, 70);
 }
 
+
+
+/* if screen size is 768( average phone screen size ) or below, the below rules will be followed  */
+@media (max-width: 768px) {
+/* hides sidebar  */
+    .side-bar{
+        display: none;
+    }
+    #main-header {
+      font-size: 2.5rem;
+
+    }
+  
+
+    .contact-text-box {
+      width: 60%;
+      padding: 20px;
+    }
+  
+    .about-image {
+      width: 80%;
+      height: auto;
+    }
+  
+    .index-links {
+      font-size: 2rem;
+
+    }
+  
+    .contact-links {
+      font-size: 2rem;
+    }
+
+
+    #music-banner{
+        font-size: 1rem;
+        border-width: .3rem;
+    }
+  }
